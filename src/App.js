@@ -24,14 +24,12 @@ function App() {
     Bookdetail = <Detail book={setlectedBook} onBgClick={CloseDetail} />;
   }
 
-  const displayBook = JSONDATA.filter((val, key) => {
+  const DSB = JSONDATA.map((book, index) => {
     if (searchBook === "") {
-      return <Card />;
-    } else if (val.title.toLowerCase().includes(searchBook.toLowerCase())) {
-      return <Card key={key} book={val} openBook={bookOpen} />;
+      return <Card key={index} book={book} openBook={bookOpen} />;
+    } else if (book.title.toLowerCase().includes(searchBook.toLowerCase())) {
+      return <Card key={index} book={book} openBook={bookOpen} />;
     }
-  }).map((val, key) => {
-    return <Card key={key} book={val} openBook={bookOpen} />;
   });
 
   return (
@@ -39,7 +37,7 @@ function App() {
       <div className="container">
         <Banner />
         <Search value={searchBook} setVal={setSearchBook} />
-        <div className="Content">{displayBook}</div>
+        <div className="Content">{DSB}</div>
         {Bookdetail}
       </div>
     </div>
