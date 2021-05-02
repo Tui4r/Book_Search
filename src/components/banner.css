@@ -1,0 +1,12 @@
+.banner {
+  margin: auto;
+  width: 300px;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-bottom: 3.5px solid #fff;
+  text-shadow: 2px 3px rgba(172, 172, 172, 0.445);
+}

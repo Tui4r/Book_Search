@@ -1,0 +1,58 @@
+.book-detail{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-bg{
+    position: absolute;
+    background: rgba(47, 47, 47, 0.787);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.Card-Detail{
+    height: 1fr;
+    width: 900px ;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem;
+    z-index: 1;
+    transition: .2s all ease-in-out;
+}
+
+.detail{
+    margin: 2rem;
+}
+
+.detail img{
+    height: 200px;
+    width: 150px;
+    box-shadow: 2px 5px 5px 5px rgba(136, 136, 136, 0.39);
+}
+
+
+.detail .text{
+    margin-top: 2.5rem;
+    margin-left: .5rem;
+}
+
+.detail .text span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.detail .text p {
+    font-size: 16px;
+    padding-left: 2.5rem;
+    padding-top: .5rem;
+}
